@@ -1,2 +1,57 @@
 [
+{
+  "model": "filmy.movie",
+  "pk": 1,
+  "fields": {
+    "name": "Ford v Ferrari",
+    "year": 2019,
+    "footage": 152,
+    "description": "Sportovní drama založené na skutečných událostech, které sleduje Carrolla Shelbyho a Kena Milese, kteří spolupracují s Fordem na vývoji revolučního závodního auta, aby porazili Ferrari v legendárním závodě 24 hodin Le Mans v roce 1966. Film je oslavou inženýrského génia a závodního ducha.",
+    "main_picture": ""
+  }
+},
+{
+  "model": "filmy.movie",
+  "pk": 2,
+  "fields": {
+    "name": "Deadpool",
+    "year": 2016,
+    "footage": 2016,
+    "description": "Akční komedie sleduje Wadea Wilsona, bývalého člena speciálních jednotek, který se po experimentu mění v Deadpoola, anti-hrdinu s vtipným smyslem pro humor a schopností rychlé regenerace. Film je známý svým nekonvenčním stylem a prolomením čtvrté stěny.",
+    "main_picture": ""
+  }
+},
+{
+  "model": "filmy.movie",
+  "pk": 3,
+  "fields": {
+    "name": "Deadpool 2",
+    "year": 2018,
+    "footage": 119,
+    "description": "Pokračování příběhu Wadea Wilsona, známého jako Deadpool. Tentokrát se Deadpool spojí s týmem mutantů, aby ochránil mladého chlapce s nadpřirozenými schopnostmi před nebezpečným vojákem z budoucnosti, Cablem. Film je plný akce, humoru a charakteristického stylu, který proslavil prvního Deadpoola.",
+    "main_picture": ""
+  }
+},
+{
+  "model": "filmy.movie",
+  "pk": 4,
+  "fields": {
+    "name": "Pulp Fiction",
+    "year": 1994,
+    "footage": 154,
+    "description": "Kultovní film režírovaný Quentinem Tarantinem, který zkoumá příběhy několika postav zločinového podsvětí v Los Angeles. Plný nečekaných zvratů, černého humoru a nespočetných odkazů na populární kulturu.",
+    "main_picture": ""
+  }
+},
+{
+  "model": "filmy.movie",
+  "pk": 5,
+  "fields": {
+    "name": "Matrix",
+    "year": 1999,
+    "footage": 136,
+    "description": "Sci-fi akční thriller režírovaný bratry Wachowskimi, který sleduje Thomase Andersona, známého také jako Neo, který objeví, že svět, ve kterém žije, je ve skutečnosti simulace vytvořená stroji. Neo se spojí s odbojem, aby bojoval proti strojům a osvobodil lidstvo.",
+    "main_picture": ""
+  }
+}
 ]
