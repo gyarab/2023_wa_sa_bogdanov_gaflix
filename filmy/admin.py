@@ -2,7 +2,10 @@ from django.contrib import admin
 from filmy.models import Movie, Director, Genre, Actor
 
 class MovieAdmin(admin.ModelAdmin):
-    pass
+    list_display = ["id", "name", "year", "footage", "director", "genres_display"]
+    list_display_links = ["id", "name"]
+    search_fields = ["name", "director_name"] 
+    list_filter = ["year", "genres"]
 
 
 class DirectorAdmin(admin.ModelAdmin):
