@@ -1,0 +1,14 @@
+{% extends 'filmy/base.html' %}
+
+{% block 'title' %}{{movie.name}} | {{ block.super }}{% endblock %}
+
+{% block 'content' %}
+    <h1>{{movie.name}}</h1>
+    <h2>{{movie.director}}</h2>
+    {% for genre in movie.genres.all %}
+    <span class="badge rounded-pill text-bg-primary">{{genre}}</span>
+    {% endfor %}
+    <img class="card-img-top" style= "max-height: 300px;" src='{%if movie.main_picture%}{{movie.main_picture}}{%else%}https://place-hold.it/200x280{% endif %}' alt="Card image cap">
+    <p>{{movie.description}}</p>
+
+{% endblock %}

@@ -7,3 +7,9 @@ def movies(request):
         'movies': Movie.objects.all().order_by('name')
     }
     return render(request, 'filmy/movies.html', context)
+
+def movie(request, id):
+    context = {
+        'movie': Movie.objects.get(id=id)
+    }
+    return render(request, 'filmy/movie.html', context)
