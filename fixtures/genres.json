@@ -42,4 +42,3 @@
   }
 }
 ]
-[{"model": "filmy.genre", "pk": 1, "fields": {"name": "Sci-fi"}}, {"model": "filmy.genre", "pk": 2, "fields": {"name": "Komedie"}}, {"model": "filmy.genre", "pk": 3, "fields": {"name": "Drama"}}, {"model": "filmy.genre", "pk": 4, "fields": {"name": "Horor"}}, {"model": "filmy.genre", "pk": 5, "fields": {"name": "Thriller"}}, {"model": "filmy.genre", "pk": 6, "fields": {"name": "Akèní"}}]
