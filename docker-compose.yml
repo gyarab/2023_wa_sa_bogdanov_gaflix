@@ -12,17 +12,17 @@ services:
     labels:
       - "traefik.enable=true"
 
-      - "traefik.http.routers.wa-vch2-http.rule=Host(`vch2.wa.dtcloud.cz`)"
-      - "traefik.http.routers.wa-vch2-http.entrypoints=web"
-      - "traefik.http.routers.wa-vch2-http.middlewares=wa-vch2-redirect-https@docker"
+      - "traefik.http.routers.wa-bogdanov-http.rule=Host(`bogdanov.wa.dtcloud.cz`)"
+      - "traefik.http.routers.wa-bogdanov-http.entrypoints=web"
+      - "traefik.http.routers.wa-bogdanov-http.middlewares=wa-bogdanov-redirect-https@docker"
 
-      - "traefik.http.middlewares.wa-vch2-redirect-https.redirectscheme.scheme=https"
-      - "traefik.http.middlewares.wa-vch2-redirect-https.redirectscheme.permanent=true"
+      - "traefik.http.middlewares.wa-bogdanov-redirect-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.wa-bogdanov-redirect-https.redirectscheme.permanent=true"
 
-      - "traefik.http.routers.wa-vch2-https.rule=Host(`vch2.wa.dtcloud.cz`)"
-      - "traefik.http.routers.wa-vch2-https.entrypoints=websecure"
-      - "traefik.http.routers.wa-vch2-https.tls=true"
-      - "traefik.http.routers.wa-vch2-https.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.wa-bogdanov-https.rule=Host(`bogdanov.wa.dtcloud.cz`)"
+      - "traefik.http.routers.wa-bogdanov-https.entrypoints=websecure"
+      - "traefik.http.routers.wa-bogdanov-https.tls=true"
+      - "traefik.http.routers.wa-bogdanov-https.tls.certresolver=letsencrypt"
 
   static:
     image: nginx:alpine
@@ -34,14 +34,14 @@ services:
     labels:
       - "traefik.enable=true"
 
-      - "traefik.http.routers.wa-vch2-static-http.rule=Host(`vch2.wa.dtcloud.cz`) && PathPrefix(`/static`)"
-      - "traefik.http.routers.wa-vch2-static-http.entrypoints=web"
-      - "traefik.http.routers.wa-vch2-static-http.middlewares=wa-vch2-static-redirect-https@docker"
+      - "traefik.http.routers.wa-bogdanov-static-http.rule=Host(`bogdanov.wa.dtcloud.cz`) && PathPrefix(`/static`)"
+      - "traefik.http.routers.wa-bogdanov-static-http.entrypoints=web"
+      - "traefik.http.routers.wa-bogdanov-static-http.middlewares=wa-bogdanov-static-redirect-https@docker"
 
-      - "traefik.http.middlewares.wa-vch2-static-redirect-https.redirectscheme.scheme=https"
-      - "traefik.http.middlewares.wa-vch2-static-redirect-https.redirectscheme.permanent=true"
+      - "traefik.http.middlewares.wa-bogdanov-static-redirect-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.wa-bogdanov-static-redirect-https.redirectscheme.permanent=true"
 
-      - "traefik.http.routers.wa-vch2-static-https.rule=Host(`vch2.wa.dtcloud.cz`) && PathPrefix(`/static`)"
-      - "traefik.http.routers.wa-vch2-static-https.entrypoints=websecure"
-      - "traefik.http.routers.wa-vch2-static-https.tls=true"
-      - "traefik.http.routers.wa-vch2-static-https.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.wa-bogdanov-static-https.rule=Host(`bogdanov.wa.dtcloud.cz`) && PathPrefix(`/static`)"
+      - "traefik.http.routers.wa-bogdanov-static-https.entrypoints=websecure"
+      - "traefik.http.routers.wa-bogdanov-static-https.tls=true"
+      - "traefik.http.routers.wa-bogdanov-static-https.tls.certresolver=letsencrypt"
