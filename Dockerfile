@@ -32,9 +32,7 @@ USER admin
 
 EXPOSE 80
 VOLUME [ "/data", "/app" ]
-# STOPSIGNAL SIGQUIT  # replaced by die on term
 
-# TODO use start script
 # CMD uwsgi --http=0.0.0.0:80 --module=backend.wsgi --die-on-term --uid "${UID}" --gid "${GID}"
 ENTRYPOINT [ "/start.sh" ]
 CMD [ "uwsgi" ]
